@@ -1,0 +1,224 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+   background-color: rgb(255, 255, 105);
+   /*A propriedade display flex serve paa deixar os conteúdos lado a lado*/
+   display: flex;
+
+   /*A propriedade flex-direction serve para setar em qual direção os elementos ficarão*/
+   flex-direction: column;
+
+   align-items: center;
+
+   /*A propriedade GAP serve para dar espaçamentos entre os elementos dentro de um container*/
+   gap: 4rem;
+
+   font-family: 'lato';
+
+}
+
+body h1{
+
+    font-family: 'lato';
+    margin-top: 1rem;
+    font-weight: 700;
+    color: rgb(104, 104, 104);
+
+}
+
+
+/*Estilização da DIV mãe, essa é a div que armazena os inputs*/
+.main{
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+
+
+/*Estilização da div add--item, no qual iremos estilizar o input e o botão para adicionar elementos*/
+.add--item{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    /*Quebra os elmentos para a parte de baixo, em uma tela pequena*/
+    flex-wrap: wrap;
+
+}
+
+
+/*Estilização do input e do botão*/
+#task-add,
+#btn-add{
+
+
+    border: none;
+    /*1 rem = 16px em qualquer tela*/
+    font-size: 1rem;
+    text-align: center;
+    padding: 12px;
+
+    /*Essa propriedade retira a borda do elemento quando clicada em cima*/
+    outline: none;
+
+}
+
+
+/*Estilização do input de forma individual*/
+#task-add{
+
+    /*Define-se uma largura fixa para o elemento*/
+    width: 20rem;
+    border-radius: 10px;
+
+}
+
+
+#btn-add{
+
+    cursor: pointer;
+
+    border-radius: 50px;
+
+    /*Para que fique um círculo perfeito em qualquer tela, precisa-se definir uma altura e largura*/
+    width: 40px;
+    height: 40px;
+
+    
+
+    background-color: rgb(152, 152, 152);
+
+    color: rgb(0, 0, 0);
+    transition: .5s;
+
+}
+
+#btn-add:hover{
+
+    background-color: rgb(38, 63, 165);
+    color: #fff;
+
+}
+
+
+
+/*Estilização dos inputs, no qual irão armazenar as tasks*/
+#to-do-list{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+
+}
+
+#to-do-list li {
+    list-style: none;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center; /* Para centralizar o conteúdo verticalmente */
+    justify-content: space-between;
+}
+
+
+
+
+.task-box {
+    background-color: rgb(200, 186, 186);
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 100%;
+    text-align: center;
+    transition: 1s;
+}
+
+
+/*Animação ao passar o mouse na tarefa*/
+
+.task-box:hover {
+    -webkit-animation: anime-balanco 1s ease;
+    animation: anime-balanco 2s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+
+@keyframes anime-balanco {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/*Final da animação*/
+
+
+
+
+
+
+/*Botão de checar*/
+.btn-task{
+
+    background-color: rgb(18, 228, 18);
+    padding: 0.4rem;
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    color: #1f1f1f;
+    text-align: center;
+    transition: .5s;
+    box-shadow: 1px 2px 2px 0px rgb(124, 124, 124);
+    cursor: pointer;
+    
+    
+}
+
+
+.btn-task:hover{
+
+    background-color: #fff;
+    color: rgb(10, 10, 10);
+
+}
+
+
+
+
+/*Botão de Excluir*/
+.btn-delete{
+
+    background-color: rgb(228, 46, 18);
+    padding: 0.4rem;
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    color: #0d0d0d;
+    text-align: center;
+    transition: .5s;
+    box-shadow: 1px 2px 2px 0px rgb(124, 124, 124);
+    cursor: pointer;
+    
+    
+}
+
+
+.btn-delete:hover{
+
+    background-color: #fff;
+    color: rgb(10, 10, 10);
+
+}
+

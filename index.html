@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconnect para melhorar o carregamento da fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link para a fonte Lato -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="script.js" defer></script>
+
+    <title>To do List Keu</title>
+</head>
+
+
+
+<body>
+
+    <!--Título da página-->
+    <h1>
+        Lista de tarefas
+    </h1>
+
+    <!--DIV ONDE IRÁ FICAR TODO O CONTEÚDO PRINCIPAL-->
+    <div class="main">
+
+        <!--Nessa primeira div ficará armazenado o input para digitar os valores-->
+        <div class="add--item">
+            <input type="text" placeholder="Adicione uma tarefa" id="task-add">
+
+            <!--Utilizaremos esse botão para adicionar os itens-->
+            <button id="btn-add" title="Adicionar tarefa">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                </svg>
+
+            </button>
+        </div>
+
+        <!--Nessa div, será entregue os valores digitados pelo usuário-->
+        
+
+            <ul id="to-do-list">
+                <li>    </li>
+                
+            </ul>
+
+      
+
+
+    </div>
+
+
+
+</body>
+
+</html>
